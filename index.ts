@@ -9,6 +9,12 @@ app.get('/', (_, res) => {
   });
 });
 
+app.get('/jaymin', (_, res) => {
+  res.status(200).json({
+    message: 'Hai bebi <3'
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`App is running on Port ${PORT}`);
 });
